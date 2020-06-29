@@ -1,0 +1,29 @@
+My solution:
+
+We know the input length is 12
+starting guess:
+000000000000 // IndexError: string index out of range
+000k00000000 // `k` is random just to avoid index ouf of range error
+0a0000t00000 // `a` for juliet `for loop`, `t` for GWFLAG{..}' first `G`
+0aok0nt00000 // `o` to get `is` (the second word) in foxtrot, `n` to avoid error and makes the most sense for foxtrot `b'It is definitewy obsfusNated in here.'`
+0aok0nt0000e // `e` for `definitely` in foxtrot `foxtrot b'It is definitely obsfusNated in here.'`
+0aok0nt00l0e // `l` to complete foxtrot `b'It is definitely obsfuscated in here.'`
+0aokent00l0e // `e` to fix november from `cont0nt` to `content`, now the flag output is GWB0AG{SpellingBee}, we know the answer is `SpellingBee`
+0aokent00lLe // `L` to make the flag more complete but not necessary GWFLAG{SpellingBee}
+
+flag[3] = hijk
+flag[11] = e
+
+ obsf
+usca
+
+
+Some foxtrot value from different input:
+b'5q jn defjZ5qewy obnawnNMted in here.'
+b'5t jr defjZ5tewy obrewrNMted in here.'
+
+
+
+Credit:
+CorrectMe.chen.py (uncompleted work but enlightening) from my teammate Chen
+daohentaomle // GWFLAG{SpellingBee} from Justin Lu
